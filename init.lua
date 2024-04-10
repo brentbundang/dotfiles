@@ -31,3 +31,4 @@ require("mason").setup()
 require("lualine").setup()
 
 vim.cmd 'colorscheme kanagawa'
+vim.opt.clipboard=unamedplus
