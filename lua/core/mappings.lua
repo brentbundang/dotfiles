@@ -24,6 +24,6 @@ map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope Git
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git status" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
 
---Live grep
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Telescope Live Grep" })
+--undotree
+map('n', '<leader>u', '<cmd>UndotreeToggle<CR>', { noremap = true, silent = true, desc = "Toggle Undo Tree" })
 

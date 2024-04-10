@@ -25,7 +25,6 @@ return require('packer').startup(function(use)
 		run = ':TSUpdate'
 	}
 	use "rebelot/kanagawa.nvim"
-	use { "jiaoshijie/undotree" }
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
@@ -59,7 +58,7 @@ return require('packer').startup(function(use)
 	
 	use "christoomey/vim-tmux-navigator"
 	use "nvim-lualine/lualine.nvim"
-	use "mbbill/undotree"
+        use "mbbill/undotree"
 
 
    
