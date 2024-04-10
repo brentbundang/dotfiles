@@ -28,4 +28,6 @@ require("core.mappings")
 require("core.plugins")
 require("packer")
 require("mason").setup()
+require("lualine").setup()
 
+vim.cmd 'colorscheme kanagawa'
