@@ -29,6 +29,8 @@ require("core.plugins")
 require("packer")
 require("mason").setup()
 require("lualine").setup()
+require('dapui').setup()
+require('dap-go').setup()
 
 vim.cmd 'colorscheme kanagawa'
 vim.opt.clipboard=unamedplus

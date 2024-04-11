@@ -27,3 +27,7 @@ map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find
 --undotree
 map('n', '<leader>u', '<cmd>UndotreeToggle<CR>', { noremap = true, silent = true, desc = "Toggle Undo Tree" })
 
+map("n", "<leader>dt", ":DapUiToggle<CR>")
+map("n", "<leader>db", ":DapToggleBreakpoint<CR>")
+map("n", "<leader>dc", ":DapContinue<CR>")
+map("n", "<leader>dr", ":lua require('dapui'.open({reset= true })<CR>")
