@@ -59,16 +59,8 @@ return require('packer').startup(function(use)
 	use "christoomey/vim-tmux-navigator"
 	use "nvim-lualine/lualine.nvim"
         use "mbbill/undotree"
-	use { "nvim-neotest/nvim-nio" }
-	use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-	use 'theHamsta/nvim-dap-virtual-text'
-	use 'leoluz/nvim-dap-go'
-	use {
-		'rcarriga/nvim-dap-ui',
-		requires = {'mfussenegger/nvim-dap'}
-	}
-	use 'leoluz/nvim-dap-go'
-
+	use { "rcarriga/nvim-dap-ui", 
+	requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
 
 
 

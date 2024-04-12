@@ -1,7 +1,5 @@
 local map = vim.keymap.set 
 vim.g.mapleader = " "
-map("n", "-", vim.cmd.Ex)
-
 
 -- nvimtree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "Nvimtree Toggle window" })
@@ -24,10 +22,21 @@ map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "Telescope Git
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git status" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
 
---undotree
-map('n', '<leader>u', '<cmd>UndotreeToggle<CR>', { noremap = true, silent = true, desc = "Toggle Undo Tree" })
-
-map("n", "<leader>dt", ":DapUiToggle<CR>")
-map("n", "<leader>db", ":DapToggleBreakpoint<CR>")
-map("n", "<leader>dc", ":DapContinue<CR>")
+-- attempt at debugging
+map('n', '<leader>dt', ':lua require("dapui").toggle()<CR>', { noremap = true, silent = true })
+map('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', { noremap = true, silent = true })
+map('n', '<leader>dc', ':lua require("dap").continue()<CR>', { noremap = true, silent = true })
 map("n", "<leader>dr", ":lua require('dapui'.open({reset= true })<CR>")
+
+
+--copy 
+map("n", "<leader>y", "+y")
+map("n", "<leader>Y", "+yg_")
+map("n", "<leader>y", "+y")
+map("n", "<leader>y", "+yy")
+
+--paste
+
+map("n", "<leader>p", "+p")
+map("n", "<leader>P", "+P")
+

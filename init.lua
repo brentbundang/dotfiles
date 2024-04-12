@@ -5,8 +5,6 @@ vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
--- empty setup using defaults
-require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
@@ -33,4 +31,4 @@ require('dapui').setup()
 require('dap-go').setup()
 
 vim.cmd 'colorscheme kanagawa'
-vim.opt.clipboard=unamedplus
+vim.opt.clipboard=unamed
