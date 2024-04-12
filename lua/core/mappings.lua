@@ -28,15 +28,3 @@ map('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', { noremap 
 map('n', '<leader>dc', ':lua require("dap").continue()<CR>', { noremap = true, silent = true })
 map("n", "<leader>dr", ":lua require('dapui'.open({reset= true })<CR>")
 
-
---copy 
-map("n", "<leader>y", "+y")
-map("n", "<leader>Y", "+yg_")
-map("n", "<leader>y", "+y")
-map("n", "<leader>y", "+yy")
-
---paste
-
-map("n", "<leader>p", "+p")
-map("n", "<leader>P", "+P")
-
