@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 	use "nvim-lua/plenary.nvim"
 	use {
 		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
+		run = ':TSUpdate :TSInstall python'
 	}
 	use "rebelot/kanagawa.nvim"
 	use {
@@ -59,11 +59,18 @@ return require('packer').startup(function(use)
 	use "christoomey/vim-tmux-navigator"
 	use "nvim-lualine/lualine.nvim"
         use "mbbill/undotree"
-	use { "rcarriga/nvim-dap-ui", 
-	requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
+	use {
+		"rcarriga/nvim-dap-ui",
+		requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}
+	}
 
+	use {
+		"mfussenegger/nvim-dap-python"
+	}
 
-
+	use {
+		"theHamsta/nvim-dap-virtual-text"
+	}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

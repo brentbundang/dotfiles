@@ -23,8 +23,8 @@ map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "Telescope Git 
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Telescope Find files" })
 
 -- attempt at debugging
-map('n', '<leader>dt', ':lua require("dapui").toggle()<CR>', { noremap = true, silent = true })
-map('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', { noremap = true, silent = true })
-map('n', '<leader>dc', ':lua require("dap").continue()<CR>', { noremap = true, silent = true })
+map('n', '<leader>dt', ':lua require("dapui").toggle()<CR>', { noremap = true })
+map('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', { silent = true })
+map('n', '<leader>dc', ':lua require("dap").continue()<CR>', { silent = true })
 map("n", "<leader>dr", ":lua require('dapui'.open({reset= true })<CR>")
 
