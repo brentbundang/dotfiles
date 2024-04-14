@@ -28,8 +28,7 @@ require("core.plugins")
 require("packer")
 require("mason").setup()
 require("lualine").setup()
-require('dapui').setup()
-require('dap-go').setup()
 
 vim.cmd 'colorscheme kanagawa'
-
+require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
+require("dapui").setup()
