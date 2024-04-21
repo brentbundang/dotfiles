@@ -9,5 +9,9 @@ format_on_save.setup({
 	formatter_by_ft = {
 		typescript = formatters.prettierd, 
 		python = formatters.black,
+		javascript = formatters.lsp,
+		javascriptreact = formatters.lsp,
+		typescript = formatters.prettierd,
+		typescriptreact = formatters.prettierd
 	}
 })

@@ -73,6 +73,19 @@ return require('packer').startup(function(use)
 	}
 
 	use "elentok/format-on-save.nvim"; 
+	use { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"} }
+	use { 
+		"microsoft/vscode-js-debug",
+		opt = true, 
+		run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle"
+	}
+	use {
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
 	
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
